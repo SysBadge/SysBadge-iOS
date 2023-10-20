@@ -14,8 +14,8 @@
 		953625C82AE2BF4F00518076 /* SysBadgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953625C72AE2BF4F00518076 /* SysBadgeTests.swift */; };
 		953625D22AE2BF4F00518076 /* SysBadgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953625D12AE2BF4F00518076 /* SysBadgeUITests.swift */; };
 		953625D42AE2BF4F00518076 /* SysBadgeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953625D32AE2BF4F00518076 /* SysBadgeUITestsLaunchTests.swift */; };
-		953625E22AE2C02800518076 /* SysBadge in Frameworks */ = {isa = PBXBuildFile; productRef = 953625E12AE2C02800518076 /* SysBadge */; };
 		953625E42AE2C02800518076 /* SysBadge.BLE in Frameworks */ = {isa = PBXBuildFile; productRef = 953625E32AE2C02800518076 /* SysBadge.BLE */; };
+		953625EB2AE2C1CD00518076 /* DeviceInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953625EA2AE2C1CD00518076 /* DeviceInformationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		953625B22AE2BF4E00518076 /* SysBadge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SysBadge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		953625B22AE2BF4E00518076 /* SysBadgeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SysBadgeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		953625B52AE2BF4E00518076 /* SysBadgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysBadgeApp.swift; sourceTree = "<group>"; };
 		953625B72AE2BF4E00518076 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		953625B92AE2BF4F00518076 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +48,7 @@
 		953625D12AE2BF4F00518076 /* SysBadgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysBadgeUITests.swift; sourceTree = "<group>"; };
 		953625D32AE2BF4F00518076 /* SysBadgeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysBadgeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		953625E62AE2C05B00518076 /* SysBadge-swift */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "SysBadge-swift"; path = "../SysBadge-swift"; sourceTree = "<group>"; };
+		953625EA2AE2C1CD00518076 /* DeviceInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInformationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				953625E22AE2C02800518076 /* SysBadge in Frameworks */,
 				953625E42AE2C02800518076 /* SysBadge.BLE in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,7 +91,7 @@
 		953625B32AE2BF4E00518076 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				953625B22AE2BF4E00518076 /* SysBadge.app */,
+				953625B22AE2BF4E00518076 /* SysBadgeApp.app */,
 				953625C32AE2BF4F00518076 /* SysBadgeTests.xctest */,
 				953625CD2AE2BF4F00518076 /* SysBadgeUITests.xctest */,
 			);
@@ -147,16 +147,33 @@
 		953625E72AE2C0FF00518076 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				953625E82AE2C1B500518076 /* Badge */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		953625E82AE2C1B500518076 /* Badge */ = {
+			isa = PBXGroup;
+			children = (
+				953625E92AE2C1BB00518076 /* DeviceInformation */,
+			);
+			path = Badge;
+			sourceTree = "<group>";
+		};
+		953625E92AE2C1BB00518076 /* DeviceInformation */ = {
+			isa = PBXGroup;
+			children = (
+				953625EA2AE2C1CD00518076 /* DeviceInformationView.swift */,
+			);
+			path = DeviceInformation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		953625B12AE2BF4E00518076 /* SysBadge */ = {
+		953625B12AE2BF4E00518076 /* SysBadgeApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 953625D72AE2BF4F00518076 /* Build configuration list for PBXNativeTarget "SysBadge" */;
+			buildConfigurationList = 953625D72AE2BF4F00518076 /* Build configuration list for PBXNativeTarget "SysBadgeApp" */;
 			buildPhases = (
 				953625AE2AE2BF4E00518076 /* Sources */,
 				953625AF2AE2BF4E00518076 /* Frameworks */,
@@ -166,13 +183,12 @@
 			);
 			dependencies = (
 			);
-			name = SysBadge;
+			name = SysBadgeApp;
 			packageProductDependencies = (
-				953625E12AE2C02800518076 /* SysBadge */,
 				953625E32AE2C02800518076 /* SysBadge.BLE */,
 			);
 			productName = SysBadge;
-			productReference = 953625B22AE2BF4E00518076 /* SysBadge.app */;
+			productReference = 953625B22AE2BF4E00518076 /* SysBadgeApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		953625C22AE2BF4F00518076 /* SysBadgeTests */ = {
@@ -250,7 +266,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				953625B12AE2BF4E00518076 /* SysBadge */,
+				953625B12AE2BF4E00518076 /* SysBadgeApp */,
 				953625C22AE2BF4F00518076 /* SysBadgeTests */,
 				953625CC2AE2BF4F00518076 /* SysBadgeUITests */,
 			);
@@ -288,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				953625EB2AE2C1CD00518076 /* DeviceInformationView.swift in Sources */,
 				953625B82AE2BF4E00518076 /* ContentView.swift in Sources */,
 				953625B62AE2BF4E00518076 /* SysBadgeApp.swift in Sources */,
 			);
@@ -315,12 +332,12 @@
 /* Begin PBXTargetDependency section */
 		953625C52AE2BF4F00518076 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 953625B12AE2BF4E00518076 /* SysBadge */;
+			target = 953625B12AE2BF4E00518076 /* SysBadgeApp */;
 			targetProxy = 953625C42AE2BF4F00518076 /* PBXContainerItemProxy */;
 		};
 		953625CF2AE2BF4F00518076 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 953625B12AE2BF4E00518076 /* SysBadge */;
+			target = 953625B12AE2BF4E00518076 /* SysBadgeApp */;
 			targetProxy = 953625CE2AE2BF4F00518076 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -620,7 +637,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		953625D72AE2BF4F00518076 /* Build configuration list for PBXNativeTarget "SysBadge" */ = {
+		953625D72AE2BF4F00518076 /* Build configuration list for PBXNativeTarget "SysBadgeApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				953625D82AE2BF4F00518076 /* Debug */,
@@ -661,11 +678,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		953625E12AE2C02800518076 /* SysBadge */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 953625E02AE2C02800518076 /* XCRemoteSwiftPackageReference "SysBadge-swift" */;
-			productName = SysBadge;
-		};
 		953625E32AE2C02800518076 /* SysBadge.BLE */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 953625E02AE2C02800518076 /* XCRemoteSwiftPackageReference "SysBadge-swift" */;
