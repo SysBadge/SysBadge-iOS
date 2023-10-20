@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		953625B62AE2BF4E00518076 /* SysBadgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953625B52AE2BF4E00518076 /* SysBadgeApp.swift */; };
+		953625B82AE2BF4E00518076 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953625B72AE2BF4E00518076 /* ContentView.swift */; };
+		953625BA2AE2BF4F00518076 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953625B92AE2BF4F00518076 /* Assets.xcassets */; };
+		953625BE2AE2BF4F00518076 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953625BD2AE2BF4F00518076 /* Preview Assets.xcassets */; };
+		953625C82AE2BF4F00518076 /* SysBadgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953625C72AE2BF4F00518076 /* SysBadgeTests.swift */; };
+		953625D22AE2BF4F00518076 /* SysBadgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953625D12AE2BF4F00518076 /* SysBadgeUITests.swift */; };
+		953625D42AE2BF4F00518076 /* SysBadgeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953625D32AE2BF4F00518076 /* SysBadgeUITestsLaunchTests.swift */; };
+		953625E22AE2C02800518076 /* SysBadge in Frameworks */ = {isa = PBXBuildFile; productRef = 953625E12AE2C02800518076 /* SysBadge */; };
+		953625E42AE2C02800518076 /* SysBadge.BLE in Frameworks */ = {isa = PBXBuildFile; productRef = 953625E32AE2C02800518076 /* SysBadge.BLE */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		953625C42AE2BF4F00518076 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 953625AA2AE2BF4E00518076 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 953625B12AE2BF4E00518076;
+			remoteInfo = SysBadge;
+		};
+		953625CE2AE2BF4F00518076 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 953625AA2AE2BF4E00518076 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 953625B12AE2BF4E00518076;
+			remoteInfo = SysBadge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		953625B22AE2BF4E00518076 /* SysBadge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SysBadge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		953625B52AE2BF4E00518076 /* SysBadgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysBadgeApp.swift; sourceTree = "<group>"; };
+		953625B72AE2BF4E00518076 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		953625B92AE2BF4F00518076 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		953625BB2AE2BF4F00518076 /* SysBadge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SysBadge.entitlements; sourceTree = "<group>"; };
+		953625BD2AE2BF4F00518076 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		953625C32AE2BF4F00518076 /* SysBadgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SysBadgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		953625C72AE2BF4F00518076 /* SysBadgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysBadgeTests.swift; sourceTree = "<group>"; };
+		953625CD2AE2BF4F00518076 /* SysBadgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SysBadgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		953625D12AE2BF4F00518076 /* SysBadgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysBadgeUITests.swift; sourceTree = "<group>"; };
+		953625D32AE2BF4F00518076 /* SysBadgeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysBadgeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		953625E62AE2C05B00518076 /* SysBadge-swift */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "SysBadge-swift"; path = "../SysBadge-swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		953625AF2AE2BF4E00518076 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				953625E22AE2C02800518076 /* SysBadge in Frameworks */,
+				953625E42AE2C02800518076 /* SysBadge.BLE in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		953625C02AE2BF4F00518076 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		953625CA2AE2BF4F00518076 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		953625A92AE2BF4E00518076 = {
+			isa = PBXGroup;
+			children = (
+				953625B42AE2BF4E00518076 /* SysBadge */,
+				953625C62AE2BF4F00518076 /* SysBadgeTests */,
+				953625D02AE2BF4F00518076 /* SysBadgeUITests */,
+				953625B32AE2BF4E00518076 /* Products */,
+				953625E52AE2C05B00518076 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		953625B32AE2BF4E00518076 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				953625B22AE2BF4E00518076 /* SysBadge.app */,
+				953625C32AE2BF4F00518076 /* SysBadgeTests.xctest */,
+				953625CD2AE2BF4F00518076 /* SysBadgeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		953625B42AE2BF4E00518076 /* SysBadge */ = {
+			isa = PBXGroup;
+			children = (
+				953625E72AE2C0FF00518076 /* Views */,
+				953625B52AE2BF4E00518076 /* SysBadgeApp.swift */,
+				953625B72AE2BF4E00518076 /* ContentView.swift */,
+				953625B92AE2BF4F00518076 /* Assets.xcassets */,
+				953625BB2AE2BF4F00518076 /* SysBadge.entitlements */,
+				953625BC2AE2BF4F00518076 /* Preview Content */,
+			);
+			path = SysBadge;
+			sourceTree = "<group>";
+		};
+		953625BC2AE2BF4F00518076 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				953625BD2AE2BF4F00518076 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		953625C62AE2BF4F00518076 /* SysBadgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				953625C72AE2BF4F00518076 /* SysBadgeTests.swift */,
+			);
+			path = SysBadgeTests;
+			sourceTree = "<group>";
+		};
+		953625D02AE2BF4F00518076 /* SysBadgeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				953625D12AE2BF4F00518076 /* SysBadgeUITests.swift */,
+				953625D32AE2BF4F00518076 /* SysBadgeUITestsLaunchTests.swift */,
+			);
+			path = SysBadgeUITests;
+			sourceTree = "<group>";
+		};
+		953625E52AE2C05B00518076 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				953625E62AE2C05B00518076 /* SysBadge-swift */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		953625E72AE2C0FF00518076 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		953625B12AE2BF4E00518076 /* SysBadge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 953625D72AE2BF4F00518076 /* Build configuration list for PBXNativeTarget "SysBadge" */;
+			buildPhases = (
+				953625AE2AE2BF4E00518076 /* Sources */,
+				953625AF2AE2BF4E00518076 /* Frameworks */,
+				953625B02AE2BF4E00518076 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SysBadge;
+			packageProductDependencies = (
+				953625E12AE2C02800518076 /* SysBadge */,
+				953625E32AE2C02800518076 /* SysBadge.BLE */,
+			);
+			productName = SysBadge;
+			productReference = 953625B22AE2BF4E00518076 /* SysBadge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		953625C22AE2BF4F00518076 /* SysBadgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 953625DA2AE2BF4F00518076 /* Build configuration list for PBXNativeTarget "SysBadgeTests" */;
+			buildPhases = (
+				953625BF2AE2BF4F00518076 /* Sources */,
+				953625C02AE2BF4F00518076 /* Frameworks */,
+				953625C12AE2BF4F00518076 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				953625C52AE2BF4F00518076 /* PBXTargetDependency */,
+			);
+			name = SysBadgeTests;
+			productName = SysBadgeTests;
+			productReference = 953625C32AE2BF4F00518076 /* SysBadgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		953625CC2AE2BF4F00518076 /* SysBadgeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 953625DD2AE2BF4F00518076 /* Build configuration list for PBXNativeTarget "SysBadgeUITests" */;
+			buildPhases = (
+				953625C92AE2BF4F00518076 /* Sources */,
+				953625CA2AE2BF4F00518076 /* Frameworks */,
+				953625CB2AE2BF4F00518076 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				953625CF2AE2BF4F00518076 /* PBXTargetDependency */,
+			);
+			name = SysBadgeUITests;
+			productName = SysBadgeUITests;
+			productReference = 953625CD2AE2BF4F00518076 /* SysBadgeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		953625AA2AE2BF4E00518076 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					953625B12AE2BF4E00518076 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					953625C22AE2BF4F00518076 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 953625B12AE2BF4E00518076;
+					};
+					953625CC2AE2BF4F00518076 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 953625B12AE2BF4E00518076;
+					};
+				};
+			};
+			buildConfigurationList = 953625AD2AE2BF4E00518076 /* Build configuration list for PBXProject "SysBadge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 953625A92AE2BF4E00518076;
+			packageReferences = (
+				953625E02AE2C02800518076 /* XCRemoteSwiftPackageReference "SysBadge-swift" */,
+			);
+			productRefGroup = 953625B32AE2BF4E00518076 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				953625B12AE2BF4E00518076 /* SysBadge */,
+				953625C22AE2BF4F00518076 /* SysBadgeTests */,
+				953625CC2AE2BF4F00518076 /* SysBadgeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		953625B02AE2BF4E00518076 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				953625BE2AE2BF4F00518076 /* Preview Assets.xcassets in Resources */,
+				953625BA2AE2BF4F00518076 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		953625C12AE2BF4F00518076 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		953625CB2AE2BF4F00518076 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		953625AE2AE2BF4E00518076 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				953625B82AE2BF4E00518076 /* ContentView.swift in Sources */,
+				953625B62AE2BF4E00518076 /* SysBadgeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		953625BF2AE2BF4F00518076 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				953625C82AE2BF4F00518076 /* SysBadgeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		953625C92AE2BF4F00518076 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				953625D42AE2BF4F00518076 /* SysBadgeUITestsLaunchTests.swift in Sources */,
+				953625D22AE2BF4F00518076 /* SysBadgeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		953625C52AE2BF4F00518076 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 953625B12AE2BF4E00518076 /* SysBadge */;
+			targetProxy = 953625C42AE2BF4F00518076 /* PBXContainerItemProxy */;
+		};
+		953625CF2AE2BF4F00518076 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 953625B12AE2BF4E00518076 /* SysBadge */;
+			targetProxy = 953625CE2AE2BF4F00518076 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		953625D52AE2BF4F00518076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		953625D62AE2BF4F00518076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		953625D82AE2BF4F00518076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SysBadge/SysBadge.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SysBadge/Preview Content\"";
+				DEVELOPMENT_TEAM = T58RJ7QENS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Requires Bluetooth to connect";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.sysbadge.swift.SysBadge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		953625D92AE2BF4F00518076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SysBadge/SysBadge.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SysBadge/Preview Content\"";
+				DEVELOPMENT_TEAM = T58RJ7QENS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Requires Bluetooth to connect";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.sysbadge.swift.SysBadge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		953625DB2AE2BF4F00518076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T58RJ7QENS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.sysbadge.swift.SysBadgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SysBadge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SysBadge";
+			};
+			name = Debug;
+		};
+		953625DC2AE2BF4F00518076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T58RJ7QENS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.sysbadge.swift.SysBadgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SysBadge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SysBadge";
+			};
+			name = Release;
+		};
+		953625DE2AE2BF4F00518076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T58RJ7QENS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.sysbadge.swift.SysBadgeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SysBadge;
+			};
+			name = Debug;
+		};
+		953625DF2AE2BF4F00518076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T58RJ7QENS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.sysbadge.swift.SysBadgeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SysBadge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		953625AD2AE2BF4E00518076 /* Build configuration list for PBXProject "SysBadge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				953625D52AE2BF4F00518076 /* Debug */,
+				953625D62AE2BF4F00518076 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		953625D72AE2BF4F00518076 /* Build configuration list for PBXNativeTarget "SysBadge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				953625D82AE2BF4F00518076 /* Debug */,
+				953625D92AE2BF4F00518076 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		953625DA2AE2BF4F00518076 /* Build configuration list for PBXNativeTarget "SysBadgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				953625DB2AE2BF4F00518076 /* Debug */,
+				953625DC2AE2BF4F00518076 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		953625DD2AE2BF4F00518076 /* Build configuration list for PBXNativeTarget "SysBadgeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				953625DE2AE2BF4F00518076 /* Debug */,
+				953625DF2AE2BF4F00518076 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		953625E02AE2C02800518076 /* XCRemoteSwiftPackageReference "SysBadge-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SysBadge/SysBadge-swift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		953625E12AE2C02800518076 /* SysBadge */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 953625E02AE2C02800518076 /* XCRemoteSwiftPackageReference "SysBadge-swift" */;
+			productName = SysBadge;
+		};
+		953625E32AE2C02800518076 /* SysBadge.BLE */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 953625E02AE2C02800518076 /* XCRemoteSwiftPackageReference "SysBadge-swift" */;
+			productName = SysBadge.BLE;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 953625AA2AE2BF4E00518076 /* Project object */;
+}
