@@ -9,11 +9,11 @@ import SwiftUI
 import SysBadge
 
 struct SystemFileView: View {
-    @ObservedObject var fileModel: FileModel
+    let system: SystemFile
     
     var body: some View {
-        SystemFileViewInner(fileModel: fileModel)
-        .navigationTitle(fileModel.systemFile?.name ?? "Unknown system")
+        SystemFileViewInner(system: system)
+        .navigationTitle(system.name)
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 Label("Upload", systemImage: "square.and.arrow.up")
@@ -24,21 +24,34 @@ struct SystemFileView: View {
 
 fileprivate struct SystemFileViewInner: View {
     @State var searchText: String = ""
-    @ObservedObject var fileModel: FileModel
+    let system: SystemFile
    
     var body: some View {
-        if fileModel.systemFile?.json == nil {
+        if system.json == nil {
             Text("Cannot show unparsed system")
         } else {
-            List(filterMembers(), id: \.self) { member in
-                MemberView(member: member)
+            VStack {
+                Text(system.name)
+                    .font(.headline)
+                    .padding(.top)
+               
+                if let json = system.json {
+                    Text(json.source_id.localizedStringResource)
+                        .foregroundStyle(.gray)
+                }
+                
+                Spacer()
+                
+                List(filterMembers(), id: \.self) { member in
+                    MemberView(member: member)
+                }
+                .searchable(text: $searchText, prompt: "Name")
             }
-            .searchable(text: $searchText, prompt: "Name")
         }
     }
     
     func filterMembers() -> [System.Member] {
-        let full = fileModel.systemFile?.json?.members ?? []
+        let full = system.json?.members ?? []
         guard !searchText.isEmpty else { return full }
         return full.filter { member in
             member.name.lowercased().contains(searchText.lowercased())
@@ -47,5 +60,5 @@ fileprivate struct SystemFileViewInner: View {
 }
 
 #Preview {
-    SystemFileView(fileModel: FileModel())
+    SystemFileView(system: try! SystemFile(data: Data(base64Encoded:  "U1lCRAEAAAAJAAAAwAAAALMAAABQbHVyYWxLaXQgRXhhbXBsZSBTeXN0ZW0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFwAAAAAAAAABAAMAAQAAAAAAAAAJAAAAygAAABkAAAAnAAAAEQAAADIAAABQbHVyYWxLaXQgRXhhbXBsZSBTeXN0ZW0AAAAAAAAAAGV4bXBsAAAACAAAAAAAAgANAAAAWgAAABEAAABSAAAAFQAAAKoAAAAdAAAACgAAAE15cmlhZCBLaXQAAAAAAAB0aGV5L3RoZW0AAAAAAAAAVGVzdGVyIFQuIFRlc3Rpbmd0b24AAAAAAAAAAAAAAAB7Im5hbWUiOiJQbHVyYWxLaXQgRXhhbXBsZSBTeXN0ZW0iLCJzb3VyY2VfaWQiOnsiUGx1cmFsS2l0Ijp7ImlkIjoiZXhtcGwifX0sIm1lbWJlcnMiOlt7Im5hbWUiOiJNeXJpYWQgS2l0IiwicHJvbm91bnMiOiJ0aGV5L3RoZW0ifSx7Im5hbWUiOiJUZXN0ZXIgVC4gVGVzdGluZ3RvbiIsInByb25vdW5zIjoiIn1dfRJe6R7yNupK940QJI/MWlvMV3nWQnViDWNESTrOHWpk")!))
 }

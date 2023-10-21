@@ -15,17 +15,24 @@ struct MemberView: View {
         VStack(alignment: .leading) {
             Text(member.name)
             
-            Text("(\(member.pronouns))")
-                .font(.caption2)
-                .padding(.horizontal)
-                .frame(maxWidth: .infinity, alignment: .trailing)
-                .foregroundStyle(.gray)
+            if !member.pronouns.isEmpty {
+                Text("(\(member.pronouns))")
+                    .font(.caption2)
+                    .padding(.horizontal)
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+                    .foregroundStyle(.gray)
+            }
         }
     }
 }
 
 #Preview {
-    MemberView(
-        member: System.Member(name: "Myriad Kit", pronouns: "they/them")
-    )
+    List {
+        MemberView(
+            member: System.Member(name: "Myriad Kit", pronouns: "they/them")
+        )
+        MemberView(
+            member: System.Member(name: "Tester T. Testington", pronouns: "")
+        )
+    }
 }

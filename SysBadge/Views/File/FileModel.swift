@@ -49,7 +49,12 @@ class FileModel: ObservableObject {
     }
     
     func setSystem(system: SystemFile?) {
-        Self.logger.debug("Loadded system: \(String(describing: system))")
+        if system == nil {
+            Self.logger.debug("Could not load empty system, unlocking")
+        } else {
+            Self.logger.debug("Loaded system: \(system!.name)")
+        }
+        
         self.reading = false
         self.systemFile = system
         self.stack = [.file]

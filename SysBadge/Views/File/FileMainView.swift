@@ -34,8 +34,7 @@ struct FileMainView: View {
                     }
                 }
                 .padding()
-                .fileImporter(isPresented: $showFileImporter, allowedContentTypes: [.init("dev.sysbadge.sysdf")!], onCompletion: { res in
-                    print(res)
+                .fileImporter(isPresented: $showFileImporter, allowedContentTypes: [.systemDefinition], onCompletion: { res in
                     guard let url = try? res.get() else {
                         return
                     }
@@ -51,7 +50,9 @@ struct FileMainView: View {
                 .navigationDestination(for: FileModel.Stack.self) { stack in
                     switch stack {
                         case .file:
-                            SystemFileView(fileModel: fileModel)
+                            if let system = fileModel.systemFile {
+                                SystemFileView(system: system)
+                            }
                     }
                 }
             }

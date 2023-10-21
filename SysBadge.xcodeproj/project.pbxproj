@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		952D64412AE45B50006D5190 /* UTType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952D64402AE45B50006D5190 /* UTType.swift */; };
+		952D64432AE45D40006D5190 /* FileDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952D64422AE45D40006D5190 /* FileDocument.swift */; };
 		953625B62AE2BF4E00518076 /* SysBadgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953625B52AE2BF4E00518076 /* SysBadgeApp.swift */; };
 		953625B82AE2BF4E00518076 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953625B72AE2BF4E00518076 /* ContentView.swift */; };
 		953625BA2AE2BF4F00518076 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953625B92AE2BF4F00518076 /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		952D64402AE45B50006D5190 /* UTType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTType.swift; sourceTree = "<group>"; };
+		952D64422AE45D40006D5190 /* FileDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDocument.swift; sourceTree = "<group>"; };
 		953625B22AE2BF4E00518076 /* SysBadgeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SysBadgeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		953625B52AE2BF4E00518076 /* SysBadgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysBadgeApp.swift; sourceTree = "<group>"; };
 		953625B72AE2BF4E00518076 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		952D643F2AE45B3F006D5190 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				952D64402AE45B50006D5190 /* UTType.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		953625A92AE2BF4E00518076 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +123,7 @@
 		953625B42AE2BF4E00518076 /* SysBadge */ = {
 			isa = PBXGroup;
 			children = (
+				952D643F2AE45B3F006D5190 /* Extensions */,
 				953625E72AE2C0FF00518076 /* Views */,
 				953625B52AE2BF4E00518076 /* SysBadgeApp.swift */,
 				953625B72AE2BF4E00518076 /* ContentView.swift */,
@@ -186,6 +199,7 @@
 				95844F922AE43A8A000C20A2 /* FileModel.swift */,
 				95844F952AE43F3E000C20A2 /* SystemFileView.swift */,
 				95844F972AE4454A000C20A2 /* MemberView.swift */,
+				952D64422AE45D40006D5190 /* FileDocument.swift */,
 			);
 			path = File;
 			sourceTree = "<group>";
@@ -328,8 +342,10 @@
 			files = (
 				953625EB2AE2C1CD00518076 /* DeviceInformationView.swift in Sources */,
 				95844F902AE43131000C20A2 /* FileMainView.swift in Sources */,
+				952D64412AE45B50006D5190 /* UTType.swift in Sources */,
 				95844F982AE4454A000C20A2 /* MemberView.swift in Sources */,
 				95844F932AE43A8A000C20A2 /* FileModel.swift in Sources */,
+				952D64432AE45D40006D5190 /* FileDocument.swift in Sources */,
 				95844F962AE43F3E000C20A2 /* SystemFileView.swift in Sources */,
 				953625B82AE2BF4E00518076 /* ContentView.swift in Sources */,
 				953625B62AE2BF4E00518076 /* SysBadgeApp.swift in Sources */,

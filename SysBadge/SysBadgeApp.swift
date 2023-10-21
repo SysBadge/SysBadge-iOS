@@ -13,5 +13,11 @@ struct SysBadgeApp: App {
         WindowGroup {
             ContentView()
         }
+        
+        #if os(iOS) || os(macOS)
+        DocumentGroup(viewing: SystemDefinitionFile.self) { file in
+            SystemFileView(system: file.document.system)
+        }
+        #endif
     }
 }

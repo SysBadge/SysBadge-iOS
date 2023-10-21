@@ -5,12 +5,18 @@
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleTypeName</key>
+			<string>System Definition</string>
 			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
+			<string>Viewer</string>
 			<key>LSHandlerRank</key>
 			<string>Default</string>
 			<key>LSItemContentTypes</key>
-			<array/>
+			<array>
+				<string>dev.sysbadge.sysdf</string>
+			</array>
+			<key>NSDocumentClass</key>
+			<string>NSPersistentDocument</string>
 		</dict>
 	</array>
 	<key>UTExportedTypeDeclarations</key>
